@@ -78,6 +78,7 @@ public class PrecioProductoStepDef {
     @When("finalizo la compra")
     public void finalizoLaCompra() throws InterruptedException {
         driver = getDriver();
+        screenShot();
         precioproducto.clickBtnFinalizarCompraPopUp();
         Thread.sleep(1000);
     }
@@ -92,5 +93,6 @@ public class PrecioProductoStepDef {
     public void vuelvoAValidarElCalculoDePreciosEnElCarrito() {
         driver = getDriver();
         precioproducto.verificarMontosCarritoDeCompras();
+        screenShot();
     }
 }
