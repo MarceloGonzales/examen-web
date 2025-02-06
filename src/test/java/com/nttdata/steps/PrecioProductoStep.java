@@ -101,5 +101,4 @@ public class PrecioProductoStep {
         Assert.assertEquals("Monto Esperado Carrito de Compras:",String.valueOf(total_monto),String.valueOf(precio_unitario*cantidad_producto));
     }
 
-
 }
